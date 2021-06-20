@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 90
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 65
+    },
+    "address": {
+      "type": "string",
+      "required": true,
+      "maxLength": 90
+    },
+    "city": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "state": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "postalCode": {
+      "type": "integer",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "addressess"
+    }
+  }
+}
