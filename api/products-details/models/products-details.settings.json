@@ -12,8 +12,8 @@
   "pluginOptions": {},
   "attributes": {
     "product": {
-      "model": "products",
-      "via": "products_details"
+      "via": "products_details",
+      "model": "products"
     },
     "price": {
       "type": "decimal",

@@ -59,6 +59,12 @@
     "products_details": {
       "via": "product",
       "collection": "products-details"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "discount": {
+      "type": "integer"
     }
   }
 }
